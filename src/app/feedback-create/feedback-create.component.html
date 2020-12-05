@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <h1>Feedback App</h1>
+</mat-toolbar>
+<div>
+    <form>
+        <div class="input">
+            <div>
+                <p>Enter Name:</p>
+                <input [(ngModel)]="pname"  placeholder="Add Name" name="pname">
+            </div>
+            <div>
+                <p>Enter the Feedback:</p>
+                <input [(ngModel)]="feedback" placeholder="Add Feedback" name="feedback">
+            </div>
+            <button type="submit" (click)="onSubmit()">Add Feedback</button>
+        </div>
+    </form>
+</div>
