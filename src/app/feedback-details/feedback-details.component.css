@@ -1,0 +1,23 @@
+.feedback-table{
+    border-collapse: collapse;
+    font-size:0.9em;
+    min-width:600px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.feedback-table thead tr{
+    background-color: #8daafa ;
+    color:#ffffff;
+    text-align:center;
+    font-weight:bold;
+}
+
+.feedback-table th, .feedback-table td{
+    padding:12px 15px;
+}
+
+.feedback-table tbody tr{
+   border-bottom:1px solid #dddddd;
+   background-color: #67e1f7;
+}
