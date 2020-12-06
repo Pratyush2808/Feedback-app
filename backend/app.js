@@ -7,7 +7,7 @@ const app = express();
 const feedbackRoute = require('./routes/feedback.route');
 
 mongoose.connect(
-    "mongodb+srv://prat2808:prat2808@cluster0.cux24.mongodb.net/feedback?retryWrites=true&w=majority",
+    "mongodb+srv://prat2808:prat2808@cluster0.cux24.mongodb.net/feedbackdb?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true

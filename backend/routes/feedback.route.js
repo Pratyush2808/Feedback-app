@@ -1,6 +1,4 @@
 const route = require('express').Router();
-var express = require('express');
-var router = express.Router();
 const Feedback = require('../models/feedback.model');
 
 route.get('/', async(req,res) => {
@@ -12,7 +10,7 @@ route.get('/', async(req,res) => {
     }
 });
 
-route.post('/', async (req,res) => {
+route.post('/', async(req,res) => {
     const pname = req.body.pname;
     const feedback = req.body.feedback;
     const feedbackItem = Feedback({
@@ -26,4 +24,4 @@ route.post('/', async (req,res) => {
         console.log(err);
     }
 });
-module.exports = router;
+module.exports = route;
